@@ -14,7 +14,7 @@ public class Main {
 
         List<Thread> threads = new ArrayList<>();
 
-        for (int i = 0; i<10; i++) {
+        for (int i = 0; i < 10; i++) {
             Thread thread = new Thread(() -> applicationService.getData("1"));
             threads.add(thread);
             thread.start();
@@ -23,8 +23,6 @@ public class Main {
         for (Thread thread : threads) {
             thread.join();
         }
-        
-
 
     }
 }

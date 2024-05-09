@@ -39,5 +39,4 @@ public class ApplicationService {
         System.out.println(Thread.currentThread().getId() + " " + "task completed");
         return data.get();
     }
-
 }
